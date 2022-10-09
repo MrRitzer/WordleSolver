@@ -1,4 +1,4 @@
-from words import Words
+from src.words import Words
 
 w = Words()
 
