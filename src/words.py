@@ -1,4 +1,4 @@
-from state import state
+from src.state import state
 from random import randint
 
 class Words:
@@ -9,12 +9,12 @@ class Words:
         self.yellow_letters = []
         self.yellow_letters_positions = []
         self.green_letters = ['','','','','']
-        with open('words.txt', 'r') as f:
+        with open('data/words.txt', 'r') as f:
             line = f.readline().replace("\n","")
             while line:
                 self.words.append(line)
                 line = f.readline().replace("\n","")
-        with open('answers.txt', 'r') as f:
+        with open('data/answers.txt', 'r') as f:
             line = f.readline().replace("\n","")
             while line:
                 self.answers.append(line)
